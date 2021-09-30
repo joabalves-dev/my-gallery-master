@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://devs.natal.br/devchallenges/my-galley-master">
+    <a href="https://devs.natal.br/devchallenges/my-gallery-master/">
       Demo
     </a>
     <span> | </span>
