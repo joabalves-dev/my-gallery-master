@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  row-gap: 15px;
+  column-gap: 30px;
+  grid-auto-flow: dense;
+  align-items: end;
+}
+
+.grid-column-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* header */
+header {
+  margin: 60px 0;
+}
+
+header .box-img {
+  width: 156px;
+  height: 156px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+}
+
+header .name-profile {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0;
+  color: #4e5150;
+}
+
+header .location-profile {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+
+header .list-badge {
+  display: flex;
+  gap: 15px;
+}
+
+header .badge-item {
+  list-style: none;
+  width: 100px;
+  padding: 15px 0;
+  text-align: center;
+  background: #e5e5e5;
+  border-radius: 12px;
+}
+
+.badge-item .number-badge {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.badge-item .description-badge {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bdbdbd;
+}
+
+/* main */
+main .box-img img {
+  border-radius: 16px;
+}
+main .box-img,
+main .box-img img {
+  width: 100%;
+}
+
+main .box-img[data-col="2"] {
+  grid-column: span 2;
+}
+
+main .box-img[data-row="2"] {
+  grid-row: span 2;
+}
+
+/* footer */
+footer p {
+  text-align: center;
+  margin: 30px 0;
+  color: #b9bdcf;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    column-gap: 15px;
+  }
+
+  header .box-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  header .name-profile {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  header .location-profile {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .badge-item .number-badge,
+  .badge-item .description-badge {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
